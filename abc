@@ -1,0 +1,10 @@
+use doctor_info;
+show tables;
+select * from doctor;
+INSERT INTO doctor VALUES(1,'JV Colony,Hyderabad','6737824447','Neurologist','Rohit Ranjan Yadav');
+INSERT INTO doctor VALUES(2,'sector 79,Noida','7484787447','Pediatrics','Aakash Kumar Ranjan');
+INSERT INTO doctor VALUES(3,'sector 58,Pune','7484824447','Pediatrics','Rakshit Singh Bisen');
+INSERT INTO doctor VALUES(4,'sector 87,Chandigarh','7957824447','Nutritionist','Rakul Preet Singh');
+drop table doctor;
+
+SELECT * FROM doctor WHERE doctor.name LIKE CONCAT('%','', '%')
